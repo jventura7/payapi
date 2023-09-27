@@ -71,10 +71,15 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "rise-up": {
+          from: { transform: "translateX(-5%)", opacity: "0" },
+          to: { transform: "none", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "rise-up": "rise-up 2s ease-out",
       },
     },
   },
