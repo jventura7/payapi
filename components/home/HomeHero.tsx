@@ -2,6 +2,8 @@ import PhoneMock from "../../public/assets/home/desktop/illustration-phone-mocku
 import EasyToImplement from "../../public/assets/home/desktop/illustration-easy-to-implement.svg";
 import Banking from "../../public/assets/home/desktop/icon-banking-and-coverage.svg";
 import { heading_font } from "@/utils/fonts";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export default function HomeHero() {
   return (
@@ -12,7 +14,16 @@ export default function HomeHero() {
       >
         Start building with our APIs for absolutely free.
       </h1>
-      <div></div>
+      <div className="mt-10 w-full text-lg">
+        <Input
+          className="mb-4 rounded-full p-6 placeholder:font-semibold placeholder:text-slate-400"
+          type="email"
+          placeholder="Enter email address"
+        />
+        <Button className="bg-dark-pink w-full rounded-full p-6 font-semibold transition duration-300 hover:opacity-70">
+          Schedule a demo
+        </Button>
+      </div>
     </div>
   );
 }
